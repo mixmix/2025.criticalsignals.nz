@@ -42,6 +42,13 @@
   </picture>
   {{ end }}
 
+  <div class="homepage-hero__announcement" aria-hidden="true">
+    <div class="homepage-hero__announcement-box">
+      <p>&#x2139;&#xFE0F; <strong>Critical Signals 2025 has finished.</strong></p>
+      <p>Visit again soon for info, or <a href="#signup">sign up for email updates</a></p>
+    </div>
+  </div>
+
   <div class="homepage-hero__content" data-element="hero-content" aria-hidden="true">
     <div data-element="question" class="question">
       {{ range $index, $question := .Params.questions }}
@@ -235,6 +242,47 @@ initializeHero()
     grid-area: a;
     width: 100%;
     height: 100%;
+  }
+}
+
+.homepage-hero__announcement {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1.5rem var(--page-gutter);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.homepage-hero__announcement-box {
+  background: rgba(248, 244, 206, 0.92);
+
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  max-width: 36rem;
+  width: 100%;
+  pointer-events: auto;
+
+  p {
+    margin: 0;
+    line-height: 1.4;
+    color: rgb(25, 64, 33);
+  }
+
+  p:first-child {
+    font-size: 1.15rem;
+  }
+
+  p:last-child {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    opacity: 0.9;
+  }
+
+  a {
+    color: rgb(25, 64, 33);
+    text-decoration: underline;
   }
 }
 
