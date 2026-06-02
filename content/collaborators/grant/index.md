@@ -1,7 +1,6 @@
 ---
 title: "Dr. Grant Corbishley"
 date: 2025-06-21
-draft: false
 # description: "a description"
 # tags: ["example", "tag"]
 draft: true # hide this entry for now
