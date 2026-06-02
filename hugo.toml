@@ -1,4 +1,4 @@
 theme = "blowfish"
-baseURL = 'https://criticalsignals.nz/'
+baseURL = 'https://2025.criticalsignals.nz/'
 languageCode = 'en-us'
 title = 'Critical Signals'
