@@ -1,7 +1,6 @@
 ---
 title: "Commons.org"
 date: 2025-06-08
-draft: false
 # description: "a description"
 tags: ["organisation"]
 draft: true # hide this entry for now
